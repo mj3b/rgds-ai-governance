@@ -76,3 +76,11 @@ but never alters RGDS decision authority.
 
 This repository supports a pilot AI service line.
 Boundaries may evolve only through explicit revision.
+
+---
+
+## Key Documents
+
+- Service Line Overview: `docs/service-line-overview.md`
+- Client Boundaries (One-Pager): `docs/client-one-pager-what-ai-will-not-do.md`
+
