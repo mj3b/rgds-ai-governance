@@ -1,201 +1,131 @@
-# Non-Agentic AI Contract  
-**v0.1 — Draft for Pilot Service Line**
+# RGDS AI Governance (Covenants)
+**Human-Governed AI Boundaries for Regulated Decision Support**
+
+This repository defines **explicit governance covenants** for the use of AI in regulated, phase-gated decision environments.
+
+It is published as part of an **independent case study** on decision defensibility and human accountability in complex, regulated delivery contexts (e.g., biopharma, life sciences, and other compliance-driven industries).
+
+This repository is intentionally **principles-first** and **non-operational**.
 
 ---
 
-## 1. Purpose
+## What This Repository Is (and Is Not)
 
-This contract defines the **mandatory boundaries** under which artificial intelligence may be used within Syner-G’s AI service line in regulated, phase-gated environments.
+### This is:
+- a governance reference defining explicit boundaries for AI assistance
+- a human-governed framework for constrained AI use in regulated decisions
+- compatible with audit, quality review, and phase-gate approval expectations
+- designed to operate alongside decision systems such as RGDS
 
-Its purpose is to ensure that:
-- AI **supports** human decision-making,
-- AI **never replaces** human authority,
-- all AI assistance remains **auditable, explainable, and defensible**, and
-- regulatory trust is **preserved or strengthened**, never eroded.
+### This is not:
+- an autonomous or agentic AI system
+- an AI implementation or tooling repository
+- a delivery playbook or enforcement mechanism
+- regulatory or legal advice
 
-This document is intentionally conservative. Speed, automation, and novelty are subordinate to **decision defensibility**.
-
----
-
-## 2. Scope
-
-This contract applies to:
-
-- All AI-assisted work delivered through Syner-G’s AI service line  
-- All internal prototypes, pilots, and client-facing solutions involving:
-  - LLMs
-  - machine learning models
-  - generative or analytical AI
-- All regulated or quasi-regulated contexts, including but not limited to:
-  - non-clinical informatics
-  - IND-enabling activities
-  - CMC and regulatory documentation support
-  - phase-gate decision support
-
-This contract governs **how AI may assist**, not **what conclusions are reached**.
+No AI described here is permitted to silently decide, approve, defer, or accept risk.
 
 ---
 
-## 3. Foundational Principle
+## Why This Exists
 
-> **AI may prepare information for a decision.  
-> Only humans may make, approve, or own decisions.**
+In regulated environments, failures rarely stem from lack of intelligence.
 
-No exception.
+They stem from:
+- unclear ownership
+- implicit assumptions
+- undocumented risk acceptance
+- decisions that cannot be reconstructed later
 
----
+Public industry discussions—including openly available webinars, articles, and conference materials hosted by firms such as **Syner-G**—have consistently surfaced these challenges in the context of AI adoption:
 
-## 4. Explicit Non-Agentic Stance
+- decision paralysis at phase gates
+- fragmented evidence across functions
+- late discovery of misalignment
+- risk-averse stakeholders unsure how AI fits into regulated workflows
 
-Under this contract:
+This repository responds to those *publicly discussed challenges* by formalizing a governance posture in which AI is:
 
-- AI systems **do not initiate decisions**
-- AI systems **do not approve decisions**
-- AI systems **do not act autonomously**
-- AI systems **do not execute downstream actions**
-- AI systems **do not replace accountable roles**
-
-AI outputs are **inputs**, never outcomes.
-
----
-
-## 5. Permitted AI Functions (Bounded Assistance)
-
-AI may be used to:
-
-- Surface inconsistencies across documents or data sources
-- Highlight missing inputs, dependencies, or assumptions
-- Summarize large volumes of material for human review
-- Compare current artifacts against historical or reference patterns
-- Flag potential risk signals or contradictions
-- Normalize information into structured, reviewable formats
-- Support scenario framing (“if / then” conditions)
-
-All outputs must be:
-- reviewable,
-- challengeable,
-- discardable without penalty.
+- optional
+- constrained
+- auditable
+- subordinate to human judgment
 
 ---
 
-## 6. Hard Prohibitions (Non-Negotiable)
+## Governance Stance (Core Principles)
 
-AI **must never**:
+### 1. AI is never a decision-maker
 
-- Render go / no-go determinations
-- Approve or reject regulatory submissions
-- Modify source data or authoritative records
-- Override documented human decisions
-- Mask uncertainty or fabricate justification
-- Create undocumented changes to scope, risk, or evidence
-- Be positioned as a decision-maker to clients or regulators
+AI systems may support analysis, but **cannot**:
 
-Any system that violates these prohibitions is **out of scope** for the service line.
+- initiate decisions
+- approve, reject, or defer outcomes
+- override human judgment
+- act autonomously or agentically
 
----
-
-## 7. Human Authority Guarantees
-
-For every AI-assisted output:
-
-- A named human owner is required
-- That owner explicitly affirms or rejects the output
-- Responsibility remains with the human, not the system
-- Silence or inaction **never** implies acceptance
-
-No AI output is considered valid until a human accepts responsibility for it.
+All decisions remain **human-owned**.
 
 ---
 
-## 8. Transparency & Explainability Requirements
+### 2. AI assistance must be explicit and reviewable
 
-All AI-assisted outputs must:
+When used, AI outputs must be:
 
-- Clearly indicate that AI assistance was used
-- Identify the role of AI in producing the output
-- Preserve traceability to source inputs
-- Avoid anthropomorphic language (“the model decided…”)
+- intentionally invoked by a human
+- reviewable and editable
+- attributable to a specific decision context
+- explicitly approved or rejected by a named human owner
 
-If an output cannot be explained to a reviewer, it **cannot be used**.
-
----
-
-## 9. Auditability & Recordkeeping
-
-AI assistance must produce an audit trail that includes:
-
-- Input sources used
-- Output generated
-- Human reviewer identity
-- Acceptance, modification, or rejection
-- Timestamped decision context
-
-These records must be:
-- retained according to project governance rules
-- available for internal and external review
-- immutable once finalized
+There is no path for silent or implicit influence.
 
 ---
 
-## 10. Escalation & Failure Handling
+### 3. Governance is separated from decision structure
 
-If AI output:
+This repository defines **AI governance boundaries only**.
 
-- conflicts with expert judgment,
-- introduces ambiguity in a regulated decision,
-- surfaces unexpected risk,
-- or behaves outside expected bounds,
+Decision systems such as **RGDS (Regulated Gate Decision Support)** define *how* decisions are recorded, evaluated, and owned.
 
-the system must:
-1. halt progression,
-2. surface the issue explicitly,
-3. require human review before continuation.
+This separation ensures that:
+- decisions remain valid without AI
+- AI use remains inspectable and reversible
+- governance can evolve independently of delivery tooling
 
-AI systems **may not silently fail**.
+Every governed decision must remain defensible **if all AI outputs are removed**.
 
 ---
 
-## 11. RGDS Integration Clause
+## Repository Contents
 
-When used alongside Regulated Gate Decision Support (RGDS):
+- **Non-Agentic AI Contract**  
+  Formal statement of explicit prohibitions and required human ownership
 
-- AI outputs may populate **decision context fields**
-- AI may assist in evidence synthesis and risk surfacing
-- AI **may not** populate final decision fields
-- All AI contributions must be explicitly marked within the decision log
-- RGDS remains the authoritative decision record
+- **What AI Will Not Do**  
+  Executive- and client-facing clarification designed to reduce adoption risk
 
-RGDS decisions are **human-governed by design**; AI assistance does not alter this.
+- **Service-Line Governance Overview**  
+  How constrained AI assistance fits into regulated consulting and delivery contexts
 
----
-
-## 12. Change Control
-
-This contract is versioned and controlled.
-
-- Revisions require:
-  - documented rationale
-  - review by service-line leadership
-  - explicit version increment
-- No silent changes
-- No local overrides
-
-Stability is a feature.
+Internal enforcement mechanisms, operational playbooks, and delivery-specific procedures are intentionally **out of scope** for this public repository.
 
 ---
 
-## 13. Intentional Conservatism
+## Intended Audience
 
-This contract prioritizes:
-- trust over speed
-- defensibility over novelty
-- clarity over capability
+This repository is written for:
 
-As the service line matures, boundaries may evolve — but **only deliberately, never implicitly**.
+- Program and delivery leaders in regulated environments
+- Quality, governance, and risk stakeholders
+- Executives responsible for phase-gate approvals
+- Consultants and analysts designing AI-assisted workflows
+
+It assumes familiarity with regulated delivery—not machine-learning research.
 
 ---
 
-### Status
+## Status
 
-**v0.1 — Draft**  
-Intended for pilot use, internal alignment, and controlled client engagement.
+This repository is a **reference governance artifact**, not a production system.
+
+It is published to support transparency, discussion, and defensible design—not to prescribe implementation.
