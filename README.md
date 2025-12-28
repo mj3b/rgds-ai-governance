@@ -1,69 +1,68 @@
-# RGDS AI Governance  
-**Human-Governed AI Boundaries for Regulated Decision Support**
+# RGDS AI Governance (Covenants)
+**Human-Governed AI Boundaries for Regulated Gate Decision Support (RGDS)**
 
-This repository defines **explicit governance boundaries** for the use of AI in regulated, phase-gated decision environments.
+This repository defines **explicit governance covenants** for the use of AI in regulated, phase-gated decision environments.
 
 It is published as part of an **independent case study** on decision defensibility and human accountability in complex, regulated delivery contexts (e.g., biopharma, life sciences, and other compliance-driven industries).
 
----
-
-## What this repository is
-
-This repository provides:
-
-- Clear, written constraints on how AI may assist human decision-makers  
-- Explicit prohibitions against autonomous or agentic AI behavior  
-- Human-in-the-loop ownership and approval requirements  
-- Governance principles designed to stand up to audit, review, and executive scrutiny  
-
-These materials are intended to be **readable by non-technical stakeholders**, including program leaders, quality and governance teams, and executive reviewers.
+This repository is intentionally **principles-first** and **non-operational**.
 
 ---
 
-## What this repository is not
+## What This Repository Is (and Is Not)
 
-This repository does **not** provide:
+### This is:
+- a governance reference defining explicit boundaries for AI assistance
+- a human-governed framework for constrained AI use in regulated decisions
+- compatible with audit, quality review, and phase-gate approval expectations
+- designed to operate alongside decision systems such as RGDS
 
-- AI models, algorithms, or training code  
-- Autonomous or agentic systems  
-- Enforcement tooling or implementation details  
-- Client-specific delivery playbooks  
-- Regulatory or legal advice  
+### This is not:
+- an autonomous or agentic AI system
+- an AI implementation or tooling repository
+- a delivery playbook or enforcement mechanism
+- regulatory or legal advice
 
-All AI described here is **decision-support only**.
-
----
-
-## Why this exists
-
-Across regulated industries, AI adoption often fails not because of model performance, but because of **unclear accountability**.
-
-Public industry discussions—including openly available webinars, articles, and conference materials hosted by firms such as **Syner-G**—have repeatedly surfaced common challenges:
-
-- Decision paralysis at phase gates  
-- Fragmented evidence across functions  
-- Late discovery of misalignment  
-- Risk-averse stakeholders unsure how AI fits into regulated workflows  
-
-This repository responds to those *publicly discussed challenges* by formalizing a governance posture that makes AI:
-
-- optional  
-- constrained  
-- auditable  
-- subordinate to human judgment  
+No AI described here is permitted to silently decide, approve, defer, or accept risk.
 
 ---
 
-## Governance stance (core principles)
+## Why This Exists
+
+In regulated environments, failures rarely stem from lack of intelligence.
+
+They stem from:
+- unclear ownership
+- implicit assumptions
+- undocumented risk acceptance
+- decisions that cannot be reconstructed later
+
+Public industry discussions—including openly available webinars, articles, and conference materials hosted by firms such as **Syner-G**—have consistently surfaced these challenges in the context of AI adoption:
+
+- decision paralysis at phase gates
+- fragmented evidence across functions
+- late discovery of misalignment
+- risk-averse stakeholders unsure how AI fits into regulated workflows
+
+This repository responds to those *publicly discussed challenges* by formalizing a governance posture in which AI is:
+
+- optional
+- constrained
+- auditable
+- subordinate to human judgment
+
+---
+
+## Governance Stance (Core Principles)
 
 ### 1. AI is never a decision-maker
 
 AI systems may support analysis, but **cannot**:
 
-- initiate decisions  
-- approve or reject outcomes  
-- override human judgment  
-- act autonomously or agentically  
+- initiate decisions
+- approve, reject, or defer outcomes
+- override human judgment
+- act autonomously or agentically
 
 All decisions remain **human-owned**.
 
@@ -73,10 +72,10 @@ All decisions remain **human-owned**.
 
 When used, AI outputs must be:
 
-- intentionally invoked by a human  
-- reviewable and editable  
-- attributable to a specific decision context  
-- explicitly approved or rejected by a named owner  
+- intentionally invoked by a human
+- reviewable and editable
+- attributable to a specific decision context
+- explicitly approved or rejected by a named human owner
 
 There is no path for silent or implicit influence.
 
@@ -86,39 +85,40 @@ There is no path for silent or implicit influence.
 
 This repository defines **AI governance boundaries only**.
 
-It is designed to operate alongside—but not inside—decision systems such as **RGDS (Regulated Gate Decision Support)**, which define *how* decisions are recorded, evaluated, and owned.
+Decision systems such as **RGDS (Regulated Gate Decision Support)** define *how* decisions are recorded, evaluated, and owned.
 
-This separation ensures:
+This separation ensures that:
+- decisions remain valid without AI
+- AI use remains inspectable and reversible
+- governance can evolve independently of delivery tooling
 
-- decisions remain valid without AI  
-- AI use remains inspectable and reversible  
-- governance can evolve independently of delivery tooling  
+Every governed decision must remain defensible **if all AI outputs are removed**.
 
 ---
 
-## Repository contents
+## Repository Contents
 
 - **Non-Agentic AI Contract**  
-  Formal statement of what AI is explicitly prohibited from doing  
+  Formal statement of explicit prohibitions and required human ownership
 
 - **What AI Will Not Do**  
-  Client- and executive-facing clarification designed to reduce adoption risk  
+  Executive- and client-facing clarification designed to reduce adoption risk
 
 - **Service-Line Governance Overview**  
-  How constrained AI assistance fits into regulated consulting and delivery contexts  
+  How constrained AI assistance fits into regulated consulting and delivery contexts
 
-Additional internal enforcement mechanisms and delivery playbooks are intentionally **out of scope** for this public repository.
+Internal enforcement mechanisms, operational playbooks, and delivery-specific procedures are intentionally **out of scope** for this public repository.
 
 ---
 
-## Intended audience
+## Intended Audience
 
 This repository is written for:
 
-- Program and delivery leaders in regulated environments  
-- Quality, compliance, and governance stakeholders  
-- Executives responsible for phase-gate approvals  
-- Consultants and analysts designing AI-assisted workflows  
+- Program and delivery leaders in regulated environments
+- Quality, governance, and risk stakeholders
+- Executives responsible for phase-gate approvals
+- Consultants and analysts designing AI-assisted workflows
 
 It assumes familiarity with regulated delivery—not machine-learning research.
 
