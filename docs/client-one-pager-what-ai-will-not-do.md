@@ -1,99 +1,107 @@
-# AI Decision Support: What AI Will Not Do (Client One-Pager)
+# What AI Will Not Do
+**Clear Boundaries for AI Assistance in RGDS**
 
-This one-pager describes how Syner-G uses AI in regulated, phase-gated environments.
-It is designed to build trust by making boundaries explicit.
+This document defines **explicit limitations** on the use of AI in decisions governed by **RGDS (Regulated Gate Decision Support)**.
 
-AI is used to support human decision-making — not replace it.
-
----
-
-## Non-Negotiable Boundaries
-
-### AI will not make decisions
-- AI will not issue Go / No-Go recommendations.
-- AI will not approve submissions, protocols, or evidence packages.
-- AI will not replace accountable decision owners.
-
-**Humans own decisions. Always.**
+It is written for executives, program leaders, quality reviewers, and stakeholders who require clarity on **where AI stops** in regulated decision environments.
 
 ---
 
-### AI will not act autonomously
-- AI will not initiate actions on your systems.
-- AI will not execute changes, submissions, or communications.
-- AI will not trigger downstream workflows without explicit human instruction.
+## Core Principle
 
-AI outputs are **inputs**, not actions.
+AI may assist analysis.  
+AI does **not** make decisions.
 
----
-
-### AI will not hide uncertainty
-- AI will not present guesses as facts.
-- AI will not fabricate rationale, citations, or evidence.
-- AI will not “smooth over” missing data.
-
-If information is uncertain or missing, it is surfaced explicitly.
+All decisions governed by RGDS remain **human-owned, human-approved, and human-accountable**.
 
 ---
 
-### AI will not modify authoritative records
-- AI will not change source data.
-- AI will not edit controlled documents without review.
-- AI will not overwrite approved decisions.
+## AI Will Not Make Decisions
 
-All changes remain under your documented controls.
+AI will not:
 
----
+- decide, approve, defer, or reject gate outcomes
+- replace human judgment at any decision point
+- determine risk posture or residual risk acceptance
+- act as a decision-maker in any capacity
 
-## What AI *Can* Do (Bounded Support)
-
-When used, AI is limited to support functions such as:
-- highlighting inconsistencies across documents
-- surfacing missing inputs or dependencies
-- summarizing large evidence sets for human review
-- flagging contradictions between new findings and prior assumptions
-- formatting information into structured, reviewable decision records
-
-Every output is:
-- reviewable
-- challengeable
-- discardable without penalty
+Decision authority always rests with named human owners.
 
 ---
 
-## How We Keep This Defensible
+## AI Will Not Act Autonomously
 
-### Human review is mandatory
-AI-assisted outputs are not used until a named human reviewer:
-- verifies the content,
-- accepts or rejects it, and
-- owns the outcome.
+AI will not:
 
----
+- initiate actions or workflows
+- operate without explicit human invocation
+- function as an agent or autonomous system
+- execute tasks without human review and disposition
 
-### Audit trails are preserved
-For AI-assisted work, we maintain traceability that includes:
-- what sources were used
-- what output was generated
-- who reviewed it
-- what was accepted, changed, or rejected
-- when the decision was finalized
+There is no permitted path for autonomous or agentic behavior.
 
 ---
 
-### Governance remains the anchor
-When RGDS is used, the decision record is the authority.
-AI may help prepare decision context, but it does not determine outcomes.
+## AI Will Not Override or Silence Humans
+
+AI will not:
+
+- override human reviewers or approvers
+- suppress dissenting opinions or alternatives
+- resolve disagreements between stakeholders
+- substitute for governance or escalation processes
+
+Disagreement and abstention remain valid human outcomes.
 
 ---
 
-## Bottom Line
+## AI Will Not Become Evidence of Record
 
-Syner-G uses AI to reduce late-stage surprises and improve decision clarity —
-while preserving:
-- human authority
-- regulatory defensibility
-- auditability
-- and trust
+AI outputs:
 
-If a use case cannot meet these boundaries, we do not deploy it.
+- are not evidence of record by default
+- do not replace source documents or primary data
+- cannot satisfy regulatory or quality requirements on their own
+
+AI outputs may support analysis, but must always be evaluated against authoritative sources.
+
+---
+
+## AI Will Not Operate Without Disclosure
+
+AI will not:
+
+- influence decisions without explicit disclosure
+- introduce hidden assumptions or rationale
+- operate in a manner that cannot be inspected or explained
+
+All AI assistance must be **visible, attributable, and reviewable**.
+
+---
+
+## AI Will Not Create Dependency
+
+Decisions governed under RGDS must remain defensible **if all AI outputs are removed**.
+
+AI may accelerate analysis, but must never become a prerequisite for decision legitimacy.
+
+---
+
+## Why These Limits Exist
+
+In regulated environments, the primary risk is not incorrect analysis.
+
+The primary risk is **unclear accountability**.
+
+These boundaries ensure that:
+- ownership remains explicit
+- governance remains auditable
+- decisions remain defensible at the time they are made
+
+---
+
+## Status
+
+This document is a **governance clarification**, not a technical specification.
+
+It defines what AI will **not** do in RGDS-governed decisions.
