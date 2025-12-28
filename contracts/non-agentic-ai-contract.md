@@ -1,5 +1,5 @@
 # RGDS AI Governance (Covenants)
-**Human-Governed AI Boundaries for Regulated Decision Support**
+**Human-Governed AI Boundaries for Regulated Gate Decision Support (RGDS)**
 
 This repository defines **explicit governance covenants** for the use of AI in regulated, phase-gated decision environments.
 
