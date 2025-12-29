@@ -1,18 +1,53 @@
 # What AI Will Not Do
-**Clear Boundaries for AI Assistance in RGDS**
+**Clear, Explicit Boundaries for AI Assistance in RGDS-Governed Decisions**
 
-This document defines **explicit limitations** on the use of AI in decisions governed by **RGDS (Regulated Gate Decision Support)**.
+This document defines **explicit limitations** on the use of AI in decisions governed by  
+**RGDS (Regulated Gate Decision Support)**.
 
-It is written for executives, program leaders, quality reviewers, and stakeholders who require clarity on **where AI stops** in regulated decision environments.
+It is written for **executives, program leaders, quality reviewers, and regulated stakeholders**
+who require unambiguous clarity on **where AI stops** in regulated, phase-gated decision environments.
+
+---
+
+## Executive Summary (One-Minute Read)
+
+**AI may assist analysis.  
+AI does not make decisions.**
+
+Under RGDS governance:
+
+- All decisions are **human-owned**
+- All approvals are **human-approved**
+- All accountability remains **human-accountable**
+
+AI is a *supporting tool*, never a decision authority.
 
 ---
 
 ## Core Principle
 
-AI may assist analysis.  
-AI does **not** make decisions.
+> **AI can inform decisions, but cannot own them.**
 
-All decisions governed by RGDS remain **human-owned, human-approved, and human-accountable**.
+At every phase gate:
+- humans decide
+- humans approve
+- humans accept or reject risk
+
+AI has **no decision authority** under any circumstance.
+
+---
+
+## What AI Will Not Do (At a Glance)
+
+| Area | AI Will Not |
+|----|-------------|
+| Decision authority | Decide, approve, defer, or reject outcomes |
+| Autonomy | Initiate actions or operate independently |
+| Risk | Determine or silently accept risk posture |
+| Governance | Replace escalation, review, or oversight |
+| Evidence | Become evidence of record |
+| Transparency | Operate without disclosure |
+| Dependency | Become required for defensible decisions |
 
 ---
 
@@ -20,12 +55,12 @@ All decisions governed by RGDS remain **human-owned, human-approved, and human-a
 
 AI will not:
 
-- decide, approve, defer, or reject gate outcomes
+- decide gate outcomes (`go`, `conditional_go`, `no_go`)
+- approve or reject deliverables
+- defer decisions on behalf of humans
 - replace human judgment at any decision point
-- determine risk posture or residual risk acceptance
-- act as a decision-maker in any capacity
 
-Decision authority always rests with named human owners.
+**Decision authority always rests with named human owners.**
 
 ---
 
@@ -33,12 +68,12 @@ Decision authority always rests with named human owners.
 
 AI will not:
 
-- initiate actions or workflows
+- initiate workflows or downstream actions
 - operate without explicit human invocation
-- function as an agent or autonomous system
+- function as an autonomous or agentic system
 - execute tasks without human review and disposition
 
-There is no permitted path for autonomous or agentic behavior.
+There is **no permitted path** for autonomous or self-directed behavior.
 
 ---
 
@@ -47,11 +82,29 @@ There is no permitted path for autonomous or agentic behavior.
 AI will not:
 
 - override human reviewers or approvers
-- suppress dissenting opinions or alternatives
 - resolve disagreements between stakeholders
-- substitute for governance or escalation processes
+- suppress dissenting views or alternatives
+- bypass governance or escalation processes
 
-Disagreement and abstention remain valid human outcomes.
+Human outcomes such as:
+- disagreement
+- abstention
+- conditional approval  
+
+remain **valid and protected**.
+
+---
+
+## AI Will Not Determine Risk Posture
+
+AI will not:
+
+- accept or mitigate risk
+- infer residual risk acceptance
+- normalize uncertainty
+- collapse unresolved assumptions into recommendations
+
+**Risk posture must always be explicitly declared by humans.**
 
 ---
 
@@ -59,11 +112,11 @@ Disagreement and abstention remain valid human outcomes.
 
 AI outputs:
 
-- are not evidence of record by default
-- do not replace source documents or primary data
-- cannot satisfy regulatory or quality requirements on their own
+- are **not** evidence of record by default
+- do **not** replace source documents, data, or reports
+- cannot independently satisfy regulatory or quality requirements
 
-AI outputs may support analysis, but must always be evaluated against authoritative sources.
+AI may **support analysis**, but authoritative evidence remains human-reviewed source material.
 
 ---
 
@@ -71,11 +124,17 @@ AI outputs may support analysis, but must always be evaluated against authoritat
 
 AI will not:
 
-- influence decisions without explicit disclosure
+- influence decisions invisibly
 - introduce hidden assumptions or rationale
 - operate in a manner that cannot be inspected or explained
 
-All AI assistance must be **visible, attributable, and reviewable**.
+All AI assistance must be:
+
+| Requirement | Meaning |
+|------------|--------|
+| Visible | Clearly disclosed as AI-assisted |
+| Attributable | Linked to a specific decision context |
+| Reviewable | Open to inspection and challenge |
 
 ---
 
@@ -83,20 +142,25 @@ All AI assistance must be **visible, attributable, and reviewable**.
 
 Decisions governed under RGDS must remain defensible **if all AI outputs are removed**.
 
-AI may accelerate analysis, but must never become a prerequisite for decision legitimacy.
+AI may accelerate work, but must **never** become:
+
+- a prerequisite for approval
+- a justification for reduced oversight
+- a substitute for human accountability
 
 ---
 
 ## Why These Limits Exist
 
-In regulated environments, the primary risk is not incorrect analysis.
+In regulated environments, the primary risk is **not incorrect analysis**.
 
 The primary risk is **unclear accountability**.
 
 These boundaries ensure that:
+
 - ownership remains explicit
 - governance remains auditable
-- decisions remain defensible at the time they are made
+- decisions remain defensible at the moment they are made
 
 ---
 
@@ -104,4 +168,5 @@ These boundaries ensure that:
 
 This document is a **governance clarification**, not a technical specification.
 
-It defines what AI will **not** do in RGDS-governed decisions.
+It exists to ensure shared understanding of **what AI will not do** in
+RGDS-governed decisions.
