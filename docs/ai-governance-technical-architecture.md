@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
   %% =========================================================
   %% RGDS — AI Governance Technical Architecture (Non-Agentic)
@@ -93,4 +94,4 @@ flowchart LR
   NG1["NON-NEGOTIABLE:\n• No agentic loops\n• No background execution\n• No implicit state transitions\n• Humans are the only state-change actors\n• AI removable without invalidating decisions"]:::block
   NG1 --- RZ
   NG1 --- AZ
-
+```
