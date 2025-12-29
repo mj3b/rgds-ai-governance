@@ -63,8 +63,8 @@ The following represents the **only permitted flow of authority** within the RGD
                               ▼
 ┌──────────────────────────────────────────────────────────────┐
 │                 Phase-Gate Decision Outcome                  │
-│           GO • CONDITIONAL GO • NO GO                        │
-│           (Human-owned, auditable, defensible)               │
+│                 GO • CONDITIONAL GO • NO GO                  │
+│             (Human-owned, auditable, defensible)             │
 └──────────────────────────────────────────────────────────────┘
 ```
 ---
@@ -88,22 +88,22 @@ The following represents the **only permitted flow of authority** within the RGD
 
 ## AI Governance Boundary (Explicit Containment)
 ```text
-┌─────────────────────────────────────────────┐
-│        AI ASSISTANCE BOUNDARY               │
-│                                             │
-│  Allowed:                                   │
-│  • Summarization                            │
-│  • Comparison                               │
-│  • Gap surfacing                            │
-│  • Drafting (non-binding)                   │
-│                                             │
-│  Prohibited:                                │
-│  • Decision-making                          │
-│  • Risk acceptance                          │
-│  • Workflow initiation                      │
-│  • Auto-approval                            │
-│  • Silent influence                         │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│         AI ASSISTANCE BOUNDARY          │
+│                                         │
+│  Allowed:                               │
+│  • Summarization                        │
+│  • Comparison                           │
+│  • Gap surfacing                        │
+│  • Drafting (non-binding)               │
+│                                         │
+│  Prohibited:                            │
+│  • Decision-making                      │
+│  • Risk acceptance                      │
+│  • Workflow initiation                  │
+│  • Auto-approval                        │
+│  • Silent influence                     │
+└─────────────────────────────────────────┘
 ```
 AI is structurally subordinate to both governance and decision structure.
 
