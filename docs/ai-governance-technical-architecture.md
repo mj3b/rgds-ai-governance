@@ -15,9 +15,7 @@ flowchart LR
   R -->|Approved decisions| D[Delivery Tooling]
 
 ```
-- Humans are the only actors that can change decision state
-- RGDS is the system of record
-- Delivery tooling consumes approved decisions
+Humans are the only actors that can change decision state.  RGDS is the system of record.  Delivery tooling consumes approved decisions
 
 ---
 
@@ -40,8 +38,7 @@ flowchart LR
     A
   end
 ```
-- AI operates only within a non-agentic boundary
-- Outputs are advisory and cannot change decision state
+AI operates only within a non-agentic boundary.  Outputs are advisory and cannot change decision state
 
 ---
 
@@ -54,4 +51,4 @@ flowchart LR
   A[AI Assist] -.->|No write access| D[Delivery Tooling]
   A -.->|No state transition| R[RGDS State Machine]
 ```
-- These paths are structurally prohibited by design, not policy.
+These paths are structurally prohibited by design, not policy.
