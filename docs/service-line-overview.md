@@ -1,106 +1,145 @@
-# AI Governance in the Service Line Context
+# AI Governance in the Service-Line Context
 **Constrained AI Assistance for Regulated Decision Support**
 
-This document explains how AI governance operates within a **consulting and delivery service context** when supporting decisions governed by **RGDS (Regulated Gate Decision Support)**.
+This document explains how AI governance operates within a **consulting and delivery service context**
+when supporting decisions governed by **RGDS (Regulated Gate Decision Support)**.
 
-It is intended for principal consultants, delivery leaders, and governance stakeholders responsible for designing and overseeing AI-assisted workflows in regulated environments.
+It is written for **principal consultants, delivery leaders, and governance stakeholders**
+responsible for designing, approving, and overseeing AI-assisted workflows in regulated environments.
+
+---
+
+## Executive Summary
+
+AI governance within the service line exists to support **decision readiness**, not automation.
+
+AI may accelerate analysis and preparation, but it **never replaces**:
+- human judgment
+- formal review
+- governance escalation
+- decision authority
+
+The service line treats AI as a **bounded analytical capability**, operating under explicit governance covenants and always subordinate to RGDS decision records.
 
 ---
 
 ## Service-Line Positioning
 
-AI governance in RGDS is designed to support **decision readiness**, not automation.
+Within regulated consulting and delivery work, AI is positioned as follows:
 
-Within a service context, AI is treated as:
-- an analytical aid
-- a time-compression tool
-- a structured assistant
+### What AI *Is* in the Service Line
 
-It is **not** treated as:
-- a decision authority
-- an execution engine
-- a substitute for expert judgment
+| Role | Description |
+|----|-------------|
+| Analytical aid | Supports structured analysis and synthesis |
+| Time-compression tool | Reduces manual effort in review-heavy workflows |
+| Structured assistant | Helps prepare non-binding analytical drafts |
+
+### What AI *Is Not* in the Service Line
+
+| Explicitly excluded | Reason |
+|--------------------|--------|
+| Decision authority | Preserves human accountability |
+| Execution engine | Prevents silent or automatic action |
+| Expert substitute | Protects domain judgment |
+| Governance mechanism | Keeps oversight human-led |
 
 ---
 
 ## Why Governance Comes First
 
-In regulated delivery, failures most often arise from:
+In regulated delivery, failures rarely result from lack of expertise.
+
+They typically arise from:
+
 - implicit assumptions
 - undocumented risk acceptance
 - unclear reviewer accountability
-- late discovery of misalignment
+- late discovery of cross-functional misalignment
 
-AI can accelerate analysis, but without governance it can **amplify these failures**.
+AI can accelerate analysis, but **without governance it can amplify these failure modes**.
 
 Governance establishes the conditions under which AI assistance is:
-- permitted
-- constrained
-- reviewable
-- reversible
+
+| Condition | Meaning |
+|--------|--------|
+| Permitted | Explicitly allowed, never assumed |
+| Constrained | Bound by non-agentic covenants |
+| Reviewable | Subject to human inspection and challenge |
+| Reversible | Removable without invalidating decisions |
 
 ---
 
 ## Relationship to RGDS
 
-RGDS defines:
-- the decision artifact
-- ownership and approval roles
-- evaluation and risk structure
-- audit and reconstruction requirements
+AI governance and RGDS address **different concerns by design**.
 
-AI governance defines:
-- whether AI may assist
-- what AI is prohibited from doing
-- how human ownership is preserved
+### Separation of Responsibilities
 
-These concerns are intentionally separated.
+| RGDS Defines | AI Governance Defines |
+|-------------|----------------------|
+| Decision artifacts | Whether AI may assist |
+| Ownership & approval | What AI is prohibited from doing |
+| Risk declaration | How human authority is preserved |
+| Audit & reconstruction | Conditions for AI use |
 
-Governance does not replace decision structure.  
-Decision structure does not embed governance logic.
+Governance does **not** replace decision structure.  
+Decision structure does **not** embed governance logic.
 
----
-
-## How AI Is Used in Service Delivery
-
-When permitted, AI assistance in a service context may support:
-
-- evidence summarization
-- cross-document comparison
-- gap identification
-- structured drafting of non-binding analysis
-
-All AI outputs require:
-- explicit human invocation
-- named human review
-- documented disposition
-
-AI assistance never bypasses service-line review, quality, or escalation processes.
+This separation ensures decisions remain valid even if AI is removed.
 
 ---
 
-## What Governance Does Not Provide
+## How AI May Be Used in Service Delivery
 
-This governance framework does **not** provide:
+When explicitly permitted, AI assistance may support:
 
-- automation pathways
-- agentic workflows
-- delivery shortcuts
-- enforcement tooling
-- client-specific procedures
+| Permitted Use | Purpose |
+|-------------|---------|
+| Evidence summarization | Reduce review time without changing substance |
+| Cross-document comparison | Surface inconsistencies or gaps |
+| Gap identification | Highlight missing or misaligned inputs |
+| Drafting support | Prepare non-binding analytical text |
 
-Operationalization, tooling, and enforcement are intentionally handled outside this public governance layer.
+### Mandatory Conditions
+
+All AI outputs must be:
+
+- explicitly invoked by a human
+- reviewed by a named individual
+- accepted, rejected, or revised deliberately
+- traceable to a specific decision context
+
+AI **never bypasses** service-line review, quality, or escalation processes.
 
 ---
 
-## Service-Line Value
+## What Governance Does *Not* Provide
+
+This governance framework intentionally excludes:
+
+| Out of Scope | Rationale |
+|-------------|-----------|
+| Automation pathways | Prevents implicit execution |
+| Agentic workflows | Maintains non-agentic posture |
+| Delivery shortcuts | Avoids erosion of review discipline |
+| Enforcement tooling | Keeps governance technology-agnostic |
+| Client-specific procedures | Preserves general applicability |
+
+Operationalization, tooling, and enforcement are handled **outside** this public governance layer.
+
+---
+
+## Service-Line Value Proposition
 
 By establishing explicit AI boundaries, the service line gains:
 
-- faster alignment at decision gates
-- reduced executive and regulatory risk
-- clearer ownership and accountability
-- safer adoption of AI assistance
+| Benefit | Outcome |
+|-------|---------|
+| Faster gate alignment | Reduced decision friction |
+| Lower regulatory risk | Clear accountability and traceability |
+| Improved executive confidence | Transparent AI posture |
+| Safer AI adoption | Bounded experimentation without trust erosion |
 
 This enables teams to move faster **without sacrificing defensibility**.
 
@@ -108,6 +147,7 @@ This enables teams to move faster **without sacrificing defensibility**.
 
 ## Status
 
-This document is a **service-level governance overview**.
+This document is a **service-level governance overview**, not an implementation guide.
 
-It provides context and intent, not implementation guidance.
+It exists to clarify **how AI fits** within regulated consulting and delivery work governed by RGDS—  
+and, critically, where it does not.
