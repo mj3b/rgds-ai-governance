@@ -28,7 +28,7 @@ This is **not** a system diagram and does **not** describe implementation, tooli
 ## Canonical Flow of Authority
 
 The following represents the **only permitted flow of authority** within the RGDS service line.
-
+```text
 ┌──────────────────────────────────────────────────────────────┐
 │                    Service-Line Delivery                     │
 │   (Consulting, Analysis, Evidence Preparation, Facilitation) │
@@ -66,7 +66,7 @@ The following represents the **only permitted flow of authority** within the RGD
 │           GO • CONDITIONAL GO • NO GO                        │
 │           (Human-owned, auditable, defensible)               │
 └──────────────────────────────────────────────────────────────┘
-
+```
 ---
 
 ## Authority Boundary Map (What Can Act vs. What Cannot)
@@ -87,7 +87,7 @@ The following represents the **only permitted flow of authority** within the RGD
 ---
 
 ## AI Governance Boundary (Explicit Containment)
-
+```text
 ┌─────────────────────────────────────────────┐
 │        AI ASSISTANCE BOUNDARY               │
 │                                             │
@@ -104,7 +104,7 @@ The following represents the **only permitted flow of authority** within the RGD
 │  • Auto-approval                            │
 │  • Silent influence                         │
 └─────────────────────────────────────────────┘
-
+```
 AI is structurally subordinate to both governance and decision structure.
 
 ---
