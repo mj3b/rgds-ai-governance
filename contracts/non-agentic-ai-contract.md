@@ -1,131 +1,186 @@
-# RGDS AI Governance (Covenants)
-**Human-Governed AI Boundaries for Regulated Gate Decision Support (RGDS)**
+# Non-Agentic AI Contract
+**Explicit Prohibitions and Human Accountability Covenants**
 
-This repository defines **explicit governance covenants** for the use of AI in regulated, phase-gated decision environments.
+This document defines **binding governance covenants** for the use of AI in
+regulated, phase-gated decision environments governed by
+**RGDS (Regulated Gate Decision Support)**.
 
-It is published as part of an **independent case study** on decision defensibility and human accountability in complex, regulated delivery contexts (e.g., biopharma, life sciences, and other compliance-driven industries).
+Its purpose is to make **non-agentic intent explicit, inspectable, and enforceable**
+in contexts where AI-assisted analysis may influence regulated decisions.
 
-This repository is intentionally **principles-first** and **non-operational**.
-
----
-
-## What This Repository Is (and Is Not)
-
-### This is:
-- a governance reference defining explicit boundaries for AI assistance
-- a human-governed framework for constrained AI use in regulated decisions
-- compatible with audit, quality review, and phase-gate approval expectations
-- designed to operate alongside decision systems such as RGDS
-
-### This is not:
-- an autonomous or agentic AI system
-- an AI implementation or tooling repository
-- a delivery playbook or enforcement mechanism
-- regulatory or legal advice
-
-No AI described here is permitted to silently decide, approve, defer, or accept risk.
+> **Relationship to RGDS**  
+> This contract governs *whether and how AI assistance may be used*.  
+> **RGDS governs how decisions are recorded, evaluated, and owned.**  
+> RGDS repository: https://github.com/mj3b/rgds
 
 ---
 
-## Why This Exists
+## Contract Scope
 
-In regulated environments, failures rarely stem from lack of intelligence.
+This contract applies to:
 
-They stem from:
-- unclear ownership
-- implicit assumptions
-- undocumented risk acceptance
-- decisions that cannot be reconstructed later
+- all AI-assisted analysis referenced in RGDS decision logs
+- all workflows claiming alignment with RGDS governance principles
+- all contexts where AI output may influence a phase-gated decision
 
-Public industry discussions—including openly available webinars, articles, and conference materials hosted by firms such as **Syner-G**—have consistently surfaced these challenges in the context of AI adoption:
-
-- decision paralysis at phase gates
-- fragmented evidence across functions
-- late discovery of misalignment
-- risk-averse stakeholders unsure how AI fits into regulated workflows
-
-This repository responds to those *publicly discussed challenges* by formalizing a governance posture in which AI is:
-
-- optional
-- constrained
-- auditable
-- subordinate to human judgment
+This contract applies **regardless of tooling, model type, deployment pattern, or vendor**.
 
 ---
 
-## Governance Stance (Core Principles)
+## Definitions
 
-### 1. AI is never a decision-maker
+| Term | Definition |
+|------|------------|
+| **AI Assistance** | Any model-generated output used to support human analysis |
+| **Agentic Behavior** | Autonomous initiation, decision-making, or action without explicit human invocation and approval |
+| **Decision** | A recorded gate outcome (e.g., `go`, `conditional_go`, `no_go`) |
+| **Human Owner** | The named individual accountable for a decision and its consequences |
+| **Evidence** | Source material used to justify or inform a decision |
 
-AI systems may support analysis, but **cannot**:
+---
+
+## Core Covenants (Non-Negotiable)
+
+### Covenant 1 — No Autonomous or Agentic Behavior
+
+AI **must not**:
 
 - initiate decisions
 - approve, reject, or defer outcomes
-- override human judgment
-- act autonomously or agentically
+- accept, mitigate, or reframe risk
+- trigger downstream actions
+- act independently of explicit human invocation
 
-All decisions remain **human-owned**.
-
----
-
-### 2. AI assistance must be explicit and reviewable
-
-When used, AI outputs must be:
-
-- intentionally invoked by a human
-- reviewable and editable
-- attributable to a specific decision context
-- explicitly approved or rejected by a named human owner
-
-There is no path for silent or implicit influence.
+AI **cannot** function as an agent, delegate, or authority surrogate under any circumstance.
 
 ---
 
-### 3. Governance is separated from decision structure
+### Covenant 2 — Human Authority Is Absolute
 
-This repository defines **AI governance boundaries only**.
+All decisions must:
 
-Decision systems such as **RGDS (Regulated Gate Decision Support)** define *how* decisions are recorded, evaluated, and owned.
+- be owned by a named human
+- be reviewable without AI assistance
+- remain valid if all AI outputs are removed
 
-This separation ensures that:
-- decisions remain valid without AI
-- AI use remains inspectable and reversible
-- governance can evolve independently of delivery tooling
-
-Every governed decision must remain defensible **if all AI outputs are removed**.
+AI outputs have **no authority** outside explicit human review and acceptance.
 
 ---
 
-## Repository Contents
+### Covenant 3 — Explicit Invocation Only
 
-- **Non-Agentic AI Contract**  
-  Formal statement of explicit prohibitions and required human ownership
+AI assistance must be:
 
-- **What AI Will Not Do**  
-  Executive- and client-facing clarification designed to reduce adoption risk
+| Requirement | Description |
+|------------|-------------|
+| Intentional | Explicitly requested by a human |
+| Contextual | Tied to a specific decision or analysis task |
+| Visible | Clearly labeled as AI-assisted |
+| Optional | Fully skippable without blocking progress |
 
-- **Service-Line Governance Overview**  
-  How constrained AI assistance fits into regulated consulting and delivery contexts
-
-Internal enforcement mechanisms, operational playbooks, and delivery-specific procedures are intentionally **out of scope** for this public repository.
-
----
-
-## Intended Audience
-
-This repository is written for:
-
-- Program and delivery leaders in regulated environments
-- Quality, governance, and risk stakeholders
-- Executives responsible for phase-gate approvals
-- Consultants and analysts designing AI-assisted workflows
-
-It assumes familiarity with regulated delivery—not machine-learning research.
+There is **no background, default, passive, or ambient AI influence**.
 
 ---
 
-## Status
+### Covenant 4 — Reviewability and Rejection Are Mandatory
 
-This repository is a **reference governance artifact**, not a production system.
+All AI outputs must be:
 
-It is published to support transparency, discussion, and defensible design—not to prescribe implementation.
+- readable and editable
+- explicitly reviewed by a human
+- explicitly accepted or rejected
+- attributable to a specific human reviewer
+
+Unreviewed AI output **must not** influence decisions.
+
+---
+
+### Covenant 5 — No Silent Risk Acceptance
+
+AI **must not**:
+
+- normalize assumptions
+- collapse uncertainty
+- mask disagreement
+- infer acceptance of unresolved risk
+
+Risk posture must be **explicitly declared by humans** in RGDS decision records.
+
+---
+
+### Covenant 6 — Evidence Subordination
+
+AI outputs may:
+
+- summarize evidence
+- compare alternatives
+- highlight inconsistencies
+- surface candidate risks
+
+AI outputs may **not**:
+
+- replace source evidence
+- override documented facts
+- serve as primary justification for a decision
+
+AI is **supporting evidence**, never authoritative evidence.
+
+---
+
+## Explicitly Prohibited Patterns
+
+The following patterns are **out of bounds** under this contract:
+
+| Prohibited Pattern | Rationale |
+|------------------|-----------|
+| Autonomous agents | Violates human accountability |
+| Auto-approval flows | Removes explicit ownership |
+| Confidence-weighted decisioning | Creates false authority |
+| Background recommendations | Enables silent influence |
+| Self-triggering workflows | Breaks phase-gate control |
+| Implicit AI defaults | Obscures human intent |
+
+---
+
+## Compatibility with RGDS
+
+This contract is designed to operate alongside RGDS by ensuring that:
+
+- AI use is optional at every gate
+- decisions remain reconstructable over time
+- accountability remains human-centric
+- governance survives tooling or model changes
+
+RGDS decision logs remain the **system of record** for:
+
+- decision outcome
+- evidence linkage
+- risk declaration
+- ownership and accountability
+
+---
+
+## Enforcement Boundary
+
+This contract:
+
+- **defines governance boundaries**
+- **does not prescribe tooling**
+- **does not implement enforcement**
+
+Operational enforcement is the responsibility of delivery systems,
+governance processes, and human reviewers.
+
+---
+
+## Contract Status
+
+This document is a **governance reference artifact**, not a legal agreement.
+
+It is published to support:
+
+- transparency
+- auditability
+- defensible AI-assisted decision design
+
+Versioning and change history are tracked at the repository level.
