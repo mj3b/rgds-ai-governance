@@ -38,7 +38,7 @@ flowchart LR
     A
   end
 ```
-AI operates only within a non-agentic boundary.  Outputs are advisory and cannot change decision state
+AI operates only within a non-agentic boundary.  Outputs are advisory and cannot change decision state.
 
 ---
 
