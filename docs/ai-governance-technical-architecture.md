@@ -9,6 +9,9 @@ Rules:
 - No optional flows
 - No negative statements
 
+> **Invariant:** Decision authority, state transitions, and risk acceptance are human-owned by design.  
+> AI participation is advisory, bounded, and removable without invalidating decisions.
+
 ```mermaid
 flowchart LR
   H[Humans] -->|Change decision state| R[RGDS System of Record]
@@ -38,11 +41,11 @@ flowchart LR
     A
   end
 ```
-AI operates only within a non-agentic boundary.  Outputs are advisory and cannot change decision state.
+AI operates only within a non-agentic boundary and has no execution surface.  Outputs are advisory and cannot change decision state.
 
 ---
 
-## Diagram 3 — Enforcement
+## Diagram 3 — Structural Non-Agentic Constraints
 
 This is where “blocked” finally belongs.
 
