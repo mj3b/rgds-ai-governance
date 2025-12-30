@@ -1,6 +1,18 @@
 # RGDS AI Governance (Covenants)
 **Human-Governed AI Boundaries for Regulated Gate Decision Support (RGDS)**
 
+<!-- RGDS AI Governance – covenants & boundaries -->
+[![Status: Reference Governance](https://img.shields.io/badge/status-reference%20governance-5b6cff)](#status)
+[![Human Governed](https://img.shields.io/badge/governance-human--governed-3bb273)](#governance-stance-core-principles)
+[![Non-Agentic](https://img.shields.io/badge/AI-explicitly%20non--agentic-2d7ff9)](#1-ai-is-never-a-decision-maker)
+[![No Autonomy](https://img.shields.io/badge/constraint-no%20autonomous%20execution-ff7a00)](#what-this-repository-is-and-is-not)
+[![Audit Compatible](https://img.shields.io/badge/property-audit--compatible%20by%20design-0aa2c0)](#what-this-repository-is-and-is-not)
+[![Principles First](https://img.shields.io/badge/approach-principles--first%20non--operational-6f42c1)](#why-this-exists)
+
+[![License](https://img.shields.io/github/license/mj3b/rgds-ai-governance)](LICENSE)
+
+[![AI Optional](https://img.shields.io/badge/AI-optional%20and%20removable-8b949e)](#governance-stance-core-principles)
+
 This repository defines **explicit governance covenants** for the use of AI in regulated, phase-gated decision environments.
 
 It is published as part of an **independent case study** on decision defensibility and human accountability in complex, regulated delivery contexts (e.g., biopharma, life sciences, and other compliance-driven industries).
