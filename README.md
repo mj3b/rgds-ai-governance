@@ -21,6 +21,16 @@ This repository is intentionally **principles-first** and **non-operational**.
 
 ---
 
+> **How to read this document**
+>
+> 1. Read *What This Repository Is (and Is Not)* to understand scope.
+> 2. Read *Why This Exists* to understand motivation.
+> 3. Read *Governance Stance (Core Principles)* end-to-end.
+>
+> This document is intended to be read linearly.
+
+---
+
 ## What This Repository Is (and Is Not)
 
 ### This is:
