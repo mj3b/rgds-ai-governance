@@ -47,7 +47,7 @@ This repository addresses all three by defining explicit governance covenants: w
 │  │  Explicit prohibition contracts                              │   │
 │  │  Removability guarantees                                     │   │
 │  │  Authority boundary maps                                     │   │
-│  │  Framework alignment (NIST, ISO 42001, EU AI Act, ARAF)     │   │
+│  │  Framework alignment (NIST, ISO 42001, EU AI Act, ARAF)      │   │
 │  └──────────────────────────────────────────────────────────────┘   │
 │       │                                                             │
 │       │  governs AI use within                                      │
@@ -88,7 +88,7 @@ AGENTIC (prohibited)                NON-AGENTIC (governed)
 ─────────────────────               ──────────────────────
 AI → recommendation                 Human invokes AI
 AI → decision                            │
-AI → approval                           ▼
+AI → approval                            ▼
 AI → execution                     AI → draft output
                                          │
 Result: authority leakage           Human reviews
@@ -124,7 +124,7 @@ Six covenants define the non-agentic AI contract. Each addresses a specific fail
 ┌─────────────────────────────────────────────────────────────────────┐
 │  COVENANT 2 — HUMAN AUTHORITY IS ABSOLUTE                           │
 ├─────────────────────────────────────────────────────────────────────┤
-│  Every decision: owned by a named human · reviewable without AI    │
+│  Every decision: owned by a named human · reviewable without AI     │
 │                  valid if all AI outputs are removed                │
 │                                                                     │
 │  Failure mode prevented: reconstructability failure under audit     │
