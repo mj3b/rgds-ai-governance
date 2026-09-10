@@ -30,6 +30,6 @@ The [workflow](../.github/workflows/validate.yml) runs the documentation and con
 
 Review all current prose for claims that exceed evidence. Confirm the [AI Dependency Test](ai-dependency-test.md) records two separate results and retains truthful disclosure. Inspect the [crosswalk](framework-crosswalk.md) against its named sources. Verify that the historical proof body, prior changelog text, LICENSE, existing commits, and release/tag identifiers remain preserved.
 
-Citation metadata uses CFF 1.2.0's `software` type as a repository packaging category because CFF only permits `software` or `dataset`. The title, abstract, and README identify the artifact as a working method/profile; the metadata does not imply executable governance enforcement. No version/date-released/DOI is invented for an unreleased correction. Cite the exact commit.
+Citation metadata uses CFF 1.2.0's `software` type as a repository packaging category because CFF only permits `software` or `dataset`. The title, abstract, and README identify the artifact as a working method/profile; the metadata does not imply executable governance enforcement. Version 1.1.0 and its release date identify the owner-authorized publication. No DOI is assigned. Cite the release and, when needed, the exact commit.
 
 For recorded results and open admission gates, see the [remediation report](remediation-report.md).
