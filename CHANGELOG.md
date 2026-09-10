@@ -1,5 +1,20 @@
 # Changelog
 
+## [Unreleased] - 2026-09-09
+
+Node & Norm Repository Remediation Audit v0.1 corrections, scoped to this repository.
+
+- Replace the active removability guarantee with an AI Dependency Test separating structural record completeness from substantive independence. Preserve the old document body with an explicit supersession notice.
+- Bound schema, authorship, approval, practical-authority, and version-history claims; correct RGDS v2.0.1 field requirements and outcome vocabulary.
+- Replace framework satisfaction claims with a sourced interpretive crosswalk and explicit compliance, conformity, certification, effectiveness, and acceptance exclusions.
+- Repair active document paths and repository inventory; clarify GDI -> method/profile -> RGDS hierarchy and separate historical study lineage.
+- Relabel the example as hypothetical, withdraw unsupported precedent counts and compliance checkmarks, and disclose unavailable assessment evidence.
+- Add citation metadata, status, AI-remediation disclosure, lightweight validation, and an admission-gate report. No new release, tag, DOI, or institutional admission is asserted.
+
+Historical entries below are retained verbatim as prior descriptions, including old filenames and superseded claims. Their version labels and dates are not evidence of corresponding GitHub releases or tags. No GitHub releases or tags were present at inspection on 2026-09-09.
+
+---
+
 ---
 
 ## [v1.0.0] — 2026-01-09
