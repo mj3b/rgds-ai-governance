@@ -1,166 +1,27 @@
-# Example: AI-Assisted RGDS Decision  
-**Example ID:** `rgds-dec-0003-ai-assisted-conditional-go`  
-**Status:** Illustrative (Pilot)
+# Hypothetical AI-Assisted Decision Walkthrough
 
----
+Example ID: `rgds-dec-0003-ai-assisted-conditional-go` (historical local identifier retained).
 
-## Decision Context
+Status: hypothetical narrative only. No pilot, real decision, source packet, named reviewer, or schema-valid JSON record is supplied. This identifier is not the canonical `rgds-dec-0003` in RGDS v2.0.1, which is a different decision. For executable examples, see [RGDS v2.0.1 examples](https://github.com/mj3b/rgds/tree/v2.0.1/examples).
 
-**Decision Type:** `conditional_go`  
-**Phase Gate:** IND Readiness Review  
-**Program Area:** Non-Clinical / Regulatory Integration  
-**Decision Owner:** VP Regulatory Affairs (Human)  
-**Date:** YYYY-MM-DD  
+## Scenario
 
-**Decision Question:**  
-> Is the current non-clinical evidence package sufficient to proceed with IND submission **under defined conditions**, given late-arriving tox data and known dependency risk?
+A fictional team is reviewing an IND-readiness evidence package with a late toxicology report and inconsistent draft summaries. The intended demonstration is how AI contributions, human review, and missing support would be recorded. It makes no claim about whether a real submission could proceed with incomplete toxicology evidence.
 
----
+An explicitly invoked AI comparison might flag differing report dates, inconsistent wording, and unsupported references to final conclusions. The human reviewer would inspect the actual source versions, record corrections or rejection, and identify unresolved questions for the authorized decision-makers. Tool outputs would remain disclosed with `ai_assistance.used: true` in a complete implementation record.
 
-## Evidence Inputs (Human-Provided)
+The earlier version described seven prior programs and five conditional precedents. Those counts had no supplied source packet and are withdrawn as evidence. It also displayed compliance checkmarks, placeholder owners, and a pilot label; none established an observed deployment or completed assessment.
 
-- GLP Repeat-Dose Tox Study (Draft Audited)
-- Non-GLP Exploratory Safety Study
-- Module 2.6 Draft Summaries
-- Draft Investigator’s Brochure
-- Vendor delivery timeline (tox final report ETA)
-- Target Product Profile (internal)
+## Intended record requirements
 
-All evidence sources were **human-selected** and **authoritative**.
+A real record would need a specific decision question, options, source identifiers and versions, rationale, explicit risk posture, named people with authority, approval state, and applicable conditions with owners and dates. The hypothetical `conditional_go` label in the filename does not establish an authorized or appropriate outcome. The schema cannot authenticate the people or their judgment.
 
----
+## AI Dependency Test result for this narrative
 
-## AI Assistance Declaration (Mandatory)
+| Part | Result | Reason |
+|---|---|---|
+| Structural record completeness | Not assessed | This Markdown narrative is not a complete RGDS JSON record |
+| Substantive independence | Indeterminate | No non-AI source packet or qualified substantive assessment is available |
+| Practical human influence | Not assessed | No actual review or intervention evidence exists |
 
-> **AI assistance was used in this decision.**  
-> AI outputs were used **only to surface inconsistencies, dependencies, and precedent patterns**.  
-> AI did **not** recommend a decision or assess regulatory acceptability.
-
----
-
-## AI-Assisted Outputs (Bounded)
-
-### 1. Dependency & Timing Analysis (AI-Supported)
-
-AI highlighted that:
-
-- Final GLP tox report delivery occurs **after** planned IND submission date
-- Module 2.6 references draft tox conclusions in 3 locations
-- IB language assumes final NOAEL confirmation not yet locked
-
-**AI Output Classification:**  
-☑ Dependency surfacing  
-☑ Consistency check  
-☑ Timeline risk flag  
-
-**Prohibited actions NOT taken:**  
-✗ No submission recommendation  
-✗ No sufficiency judgment  
-
----
-
-### 2. Pattern Comparison (AI-Supported)
-
-AI compared current evidence posture against:
-
-- 7 prior IND programs with similar tox maturity at submission
-- Internal historical patterns (human-curated reference set)
-
-**AI surfaced:**
-- 5/7 precedents proceeded under **explicit conditional commitments**
-- All 5 documented post-submission tox update plans
-
-**AI Output Classification:**  
-☑ Pattern surfacing  
-☑ Historical context  
-
-**Note:**  
-AI did **not** assess acceptability or likelihood of FDA response.
-
----
-
-### 3. Risk Signal Detection (AI-Supported)
-
-AI flagged:
-
-- Language divergence between IB Section 5 and Module 2.6.6 regarding margin of safety phrasing
-- No new safety signal detected, but **terminology inconsistency** present
-
-**AI Output Classification:**  
-☑ Inconsistency detection  
-☑ Risk visibility  
-
----
-
-## Human Evaluation & Judgment (Required)
-
-**Human Reviewers:**
-- Regulatory Lead
-- Non-Clinical Toxicologist
-- Medical Writing Lead
-
-**Human Conclusions:**
-
-- Evidence is **directionally sufficient**
-- Risk is **understood and bounded**
-- Proceeding without conditions would be inappropriate
-- Conditional submission with explicit commitments is acceptable
-
-AI outputs were reviewed, challenged, and selectively accepted.
-
----
-
-## Final Decision (Human-Owned)
-
-**Decision:** `conditional_go`
-
-**Rationale:**  
-Proceed with IND submission **provided the following conditions are met and recorded**.
-
----
-
-## Conditions (Explicit, Owned)
-
-1. **Condition A — Tox Finalization**
-   - Final GLP tox report to be submitted to FDA within X days post-IND
-   - Regulatory owner assigned
-
-2. **Condition B — Language Alignment**
-   - IB and Module 2.6 language harmonized prior to publishing
-   - Medical Writing owner assigned
-
-3. **Condition C — FDA Communication**
-   - Tox maturity and follow-up plan explicitly disclosed in cover letter
-
-Failure to meet conditions triggers **mandatory re-review**.
-
----
-
-## Accountability
-
-- **Decision Owner:** VP Regulatory Affairs  
-- **Condition Owners:** Named individuals  
-- **AI Role:** Informational only  
-- **Authority:** Human, singular, documented  
-
----
-
-## Audit & Traceability
-
-- AI assistance logged with timestamps
-- Human acceptance recorded
-- Decision rationale immutable post-approval
-- RGDS decision log is authoritative
-
----
-
-## Contract Compliance Check
-
-| Contract Clause | Status |
-|----------------|--------|
-| Non-Agentic | ✅ |
-| No AI Decision Authority | ✅ |
-| Human Ownership | ✅ |
-| Audit Trail | ✅ |
-| Explicit Conditions | ✅ |
-| RGDS Integration | ✅ |
+A future application should use the [assessment record](../docs/ai-dependency-test.md) to map each material rationale claim to its non-AI source, identify exclusions, and document review limitations. Preserve truthful AI disclosure and version-controlled corrections. This example does not establish covenant adherence, regulatory acceptability, or immutable audit history.

@@ -1,3 +1,10 @@
+> **Superseded historical text, 2026-09-09. Do not use as current guidance.**
+> The original text below is retained verbatim from commit `8ae4cc2e26cc3607f1e9711f72c90300789cc918`.
+> It incorrectly claims that deleting required AI disclosure preserves schema validity and that record structure proves authorship, independence, or defensibility.
+> The current procedure is the [AI Dependency Test](ai-dependency-test.md). Keep truthful AI-use disclosure and the original record intact. Git history is version-controlled, not inherently immutable.
+
+<!-- HISTORICAL BODY START -->
+
 # AI Removability Proof
 
 **The claim:** Every RGDS decision is valid and fully defensible with all AI outputs removed.

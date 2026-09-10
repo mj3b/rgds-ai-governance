@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this working governance method and include the exact Git commit used. No release or DOI is assigned to this remediation."
+title: "AI Assistance Governance: A Working Method/Profile for Bounded AI Participation"
+type: software
+authors:
+  - family-names: Banasihan
+    given-names: Mark Julius
+    orcid: "https://orcid.org/0009-0001-8121-2878"
+repository-code: "https://github.com/mj3b/rgds-ai-governance"
+url: "https://github.com/mj3b/rgds-ai-governance"
+license: Apache-2.0
+abstract: >-
+  Working governance method/profile for bounded AI participation in consequential
+  decisions, with a two-part AI Dependency Test separating structural record
+  completeness from substantive independence. RGDS records assigned human
+  ownership and approval; practical influence requires separate assessment.
+  Framework crosswalks are interpretive and do not establish compliance,
+  conformity, certification, or regulator acceptance. No field effectiveness
+  or independent validation is claimed.
+keywords:
+  - AI assistance governance
+  - decision evidence
+  - human authority

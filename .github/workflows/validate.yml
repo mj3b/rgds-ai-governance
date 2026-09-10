@@ -1,0 +1,28 @@
+name: Validate governance documentation
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check local documentation
+        run: python scripts/check_docs.py
+      - name: Checkout pinned RGDS reference
+        uses: actions/checkout@v4
+        with:
+          repository: mj3b/rgds
+          ref: f6fa066c7e53d1d89d68ac8ef424b559ef58be34
+          path: .reference-rgds
+      - name: Install reference validator dependency
+        run: python -m pip install 'jsonschema[format]==4.25.1'
+      - name: Check documented contract boundaries
+        run: python scripts/check_rgds_contract.py .reference-rgds

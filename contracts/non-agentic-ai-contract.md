@@ -1,203 +1,61 @@
 # Non-Agentic AI Contract
-**Explicit Prohibitions and Human Accountability Covenants**
 
-*Governing AI assistance in regulated, phase-gated decision environments under RGDS and GDI v3.0*
+This reference method/profile defines adoption requirements for bounded AI assistance in regulated phase-gate decisions. It is not a legal agreement or an implemented control system. Organizations adopting the profile must establish their own operational controls and assess whether the requirements are followed.
 
----
-
-## Purpose and Scope
-
-This contract defines binding governance covenants for AI assistance in regulated decision environments. It applies to all AI-assisted analysis referenced in RGDS decision logs, all workflows claiming alignment with RGDS governance principles, and all contexts where AI output may influence a phase-gated decision outcome.
-
-The covenants apply regardless of tooling, model type, deployment pattern, or vendor. They are technology-agnostic by design: governance boundaries must survive tooling changes, model upgrades, and organizational transitions.
-
-**Relationship to RGDS and GDI:**
-
-```
-GDI v3.0 Specification
-(universal decision architecture)
-         │
-         ├── defines: what a governed decision record contains
-         │            how accountability is structured
-         │            what human oversight requires
-         ▼
-RGDS AI Governance (this contract)
-(AI boundary definition)
-         │
-         ├── defines: what AI may do
-         │            what AI is prohibited from doing
-         │            what every AI-assisted decision must satisfy
-         ▼
-RGDS Decision Log
-(enforcement artifact)
-         │
-         └── enforces: ai_assistance disclosure schema
-                       schema validation in CI/CD
-                       named human accountability at every gate
-```
-
----
+The conceptual hierarchy is GDI general decision architecture -> AI Assistance Governance method/profile -> RGDS regulated reference implementation. The independent study is separate historical/exploratory research. The implementation contract inspected here is [RGDS v2.0.1](https://github.com/mj3b/rgds/tree/v2.0.1).
 
 ## Definitions
 
-| Term | Definition |
-|------|-----------|
-| **AI Assistance** | Any model-generated output used to support human analysis in a decision context |
-| **Agentic Behavior** | Any AI action that initiates, decides, approves, or executes without explicit human invocation at the moment of that specific action |
-| **Non-Agentic Behavior** | AI action that generates output for human review, where the human makes a deliberate, documented choice before that output influences any decision |
-| **Decision** | A recorded gate outcome (`go`, `conditional_go`, `defer`, `no_go`, `escalate`) |
-| **Human Owner** | The named individual accountable for a decision and its consequences — not a role, team, or system |
-| **Evidence** | Human-reviewed source material used to justify or inform a decision |
-| **Authority Leakage** | Transfer of decision-making influence from a named human to an AI system without explicit authorization |
-| **Removability** | The property that a decision remains fully valid and defensible if all AI outputs associated with it are removed |
+| Term | Meaning in this profile |
+|---|---|
+| AI assistance | Model-generated output used in analysis or drafting for a decision |
+| Agentic behavior | AI initiating, deciding, approving, or executing without explicit human invocation of that specific action |
+| Non-agentic assistance | An explicitly invoked bounded analytical task whose output receives human review before use |
+| Human owner | Named individual assigned accountability within the adopting organization's authority structure |
+| Decision outcome | RGDS value: `go`, `no_go`, `conditional_go`, `defer`, or `defer_with_required_evidence` |
+| Escalation | Governance routing/action when authority or evidence is insufficient; not an RGDS outcome value |
+| AI dependency | A material rationale step whose support cannot be reconstructed without model-generated output |
 
----
+## Covenant 1: No autonomous or agentic behavior
 
-## Core Covenants
+AI must not initiate decisions, approve or reject outcomes, accept risk, trigger downstream actions, or act without explicit invocation. Permitted assistance includes summarization, comparison, extraction, candidate gap identification, and structured drafting for review. Delegating escalation or approval to AI violates this profile. These prohibitions require operational controls outside the record schema.
 
-### Covenant 1 — No Autonomous or Agentic Behavior
+## Covenant 2: Assigned human authority and assessed independence
 
-**Failure mode addressed:** Authority leakage to model. A capable model produces an excellent recommendation; a fatigued reviewer accepts without independent verification; the decision record shows human approval but the reasoning was AI-generated and unreviewed.
+Identify the human owner and approvers and their authority scope. Require review of the decision basis and assess independence using the [AI Dependency Test](../docs/ai-dependency-test.md). Record unsupported steps and unresolved dependencies for human disposition.
 
-AI must not:
-- initiate decisions
-- approve, reject, or defer outcomes
-- accept, mitigate, or reframe risk on behalf of humans
-- trigger downstream actions
-- act independently of explicit human invocation at the moment of that specific action
+RGDS records assigned human ownership, approval, and review. It cannot establish that a named person authored the rationale, understood the evidence, or exercised substantive judgment. Practical human influence requires separate assessment. A complete record and a substantive dependency assessment must have separate results.
 
-AI cannot function as an agent, delegate, or authority surrogate under any circumstance.
+## Covenant 3: Explicit invocation
 
-```
-Prohibited flow:           Governed flow:
-AI → recommendation        Human invokes AI for specific task
-AI → decision                  │
-AI → approval              AI → draft output
-                               │
-                           Human reviews independently
-                               │
-                           Human decides: accept / reject / modify
-                               │
-                           Decision record: outcome + disclosure
-```
+AI assistance must be intentional, contextual, visible, and optional. Record the task, tool, and contribution. Background recommendations, ambient influence, and implicit AI defaults are prohibited. Skipping AI must be an available workflow choice; this requirement does not establish that prior decisions are independent of AI.
 
----
+## Covenant 4: Reviewability and rejection
 
-### Covenant 2 — Human Authority Is Absolute
+A named reviewer with relevant expertise must inspect each material AI contribution and record acceptance, rejection, or modification with reasons. Preserve corrections and dissent. Absence of rejection is not acceptance. An entry in `human_review` documents a review claim; validation cannot authenticate the review or measure its quality.
 
-**Failure mode addressed:** Reconstructability failure. Six months after a decision, a regulator asks who reviewed the AI output. If no human review is documented, the accountability chain does not hold regardless of outcome quality.
+## Covenant 5: No silent risk acceptance
 
-All decisions must:
-- be owned by a named individual (not a role, not a system)
-- be reviewable without AI assistance
-- remain valid and defensible if all AI outputs are removed
+Humans must declare uncertainty, assumptions, disagreement, and accepted residual risk. AI must not conceal conflicts, infer risk acceptance from proceeding, or convert unresolved uncertainty into an accepted position. RGDS `risk_posture` and `risk_assessment` record the declared basis; validation cannot establish its adequacy.
 
-AI outputs have no authority outside explicit human review and documented acceptance.
+## Covenant 6: Evidence subordination
 
----
+Trace material decision claims to inspectable non-AI sources. AI summaries and draft rationale must not replace those sources or serve as primary justification. Retain AI artifacts for provenance while excluding them from evidentiary support in a dependency assessment. A model-derived step without non-AI support must be reported, not presumed independent.
 
-### Covenant 3 — Explicit Invocation Only
+## Compatibility with the RGDS v2.0.1 contract
 
-**Failure mode addressed:** Silent or ambient AI influence. Background recommendations, default AI integration, and implicit AI behavior all create undisclosed influence paths that cannot be audited.
+Sources: the [JSON Schema](https://github.com/mj3b/rgds/blob/v2.0.1/decision-log/decision-log.schema.json) and [semantic validator](https://github.com/mj3b/rgds/blob/v2.0.1/scripts/validate_decision_log.py), pinned to commit `f6fa066c7e53d1d89d68ac8ef424b559ef58be34` for this review.
 
-AI assistance must be:
+| Mechanism | Actual requirement or behavior | Limit |
+|---|---|---|
+| JSON Schema | Requires top-level `ai_assistance`, containing `used`, `use_cases`, `artifacts`, and `controls` | Does not verify truth of disclosure |
+| Conditional JSON Schema when `used: true` | Requires `tool_name`, `tool_purpose`, `human_review`, and `ai_risk_assessment` | Presence does not establish adequate disclosure |
+| Semantic validator when `used: true` | Requires nonempty use cases and artifacts, tool name, tool purpose, and at least one human review | Presence is not authentic human review |
+| `human_review` item schema | Requires tier, reviewer reference, and finding summary | Does not assess expertise or independence |
+| `human_override_log` | Optional; each supplied item has required shape | Does not require corrections when none are recorded |
+| `ai_risk_assessment.confidence_band` | Recommended by a warning when absent with AI use | Not a mandatory schema field or calibrated confidence measure |
+| Empty control references | Semantic warnings for selected control fields | Default validation permits warnings; strict mode promotes warnings to failures |
 
-| Requirement | Meaning | Why It Matters |
-|-------------|---------|----------------|
-| Intentional | Explicitly requested by a named human for a specific task | Prevents default or ambient influence |
-| Contextual | Tied to a specific decision or analysis task | Enables traceability |
-| Visible | Clearly labeled as AI-assisted in the decision record | Enables audit |
-| Optional | Fully skippable without blocking progress | Preserves non-dependency |
+These checks cover a subset of record constraints. They do not enforce all six covenants or prevent unauthorized runtime behavior. Passing CI does not itself prevent merge unless repository controls require the checks. This profile does not assert such branch protection.
 
-There is no permitted path for background, passive, default, or ambient AI influence.
-
----
-
-### Covenant 4 — Reviewability and Rejection Are Mandatory
-
-**Failure mode addressed:** Automation bias. Parasuraman and Manzey (2010) document that humans over-rely on algorithmic recommendations, particularly under cognitive load or time pressure. The governance response is to make rejection the structurally equal alternative to acceptance — not an exception requiring justification.
-
-All AI outputs must be:
-- readable and editable by the reviewing human
-- explicitly reviewed by a named individual with relevant domain knowledge
-- explicitly accepted, rejected, or modified — not implicitly accepted by default
-- attributable to a specific human reviewer in the decision record
-
-Unreviewed AI output must not influence decisions. The absence of a rejection is not acceptance.
-
----
-
-### Covenant 5 — No Silent Risk Acceptance
-
-**Failure mode addressed:** Implicit risk posture from AI output. AI systems trained to produce coherent recommendations will tend to resolve ambiguity into a single position. In regulated contexts, that resolution constitutes risk acceptance — which must be human-declared.
-
-AI must not:
-- normalize assumptions across a decision record
-- collapse uncertainty into a single recommended position
-- mask disagreement between evidence sources
-- infer acceptance of unresolved risk from proceeding
-
-Risk posture must be explicitly declared by named humans in RGDS decision records. The `risk_posture` and `residual_risk_items` fields exist specifically to make this declaration structural, not optional.
-
----
-
-### Covenant 6 — Evidence Subordination
-
-**Failure mode addressed:** AI output displacing authoritative evidence. If an AI-generated summary replaces the primary source in a decision record, the decision is grounded in a model output rather than in verified data.
-
-AI output may:
-- summarize evidence for analytical efficiency
-- compare evidence sources to surface inconsistencies
-- highlight candidate gaps or dependencies
-- surface precedent patterns from similar contexts
-
-AI output may not:
-- replace primary source evidence
-- override documented facts from authoritative sources
-- serve as the primary justification for a decision outcome
-- be cited as evidence of record without reference to the underlying source
-
-Every decision must remain defensible on its source evidence alone, without the AI summary present.
-
----
-
-## Prohibited Patterns Reference
-
-| Pattern | Covenant Violated | Why It Is Out of Bounds |
-|---------|------------------|------------------------|
-| Autonomous agents | C1 | AI acts without explicit human invocation |
-| Auto-approval flows | C1, C4 | AI recommendation becomes decision without documented human review |
-| Confidence-weighted decisioning | C1, C2 | AI confidence score determines outcome; authority leaks to model |
-| Background recommendations | C3 | Undisclosed influence path; cannot be audited |
-| Self-triggering workflows | C1 | AI initiates downstream actions |
-| Implicit AI defaults | C3, C4 | AI output assumed approved unless overridden; inverts the governance requirement |
-| AI as evidence of record | C6 | AI output cited as authoritative source without reference to underlying data |
-| Delegating escalation to AI | C1, C2 | Escalation decisions require human authority scope assessment |
-
----
-
-## Compatibility with RGDS Decision Log Schema
-
-The RGDS decision log schema enforces these covenants at the artifact level through the `ai_assistance` disclosure object. When `ai_assistance.used = true`, the following fields are required:
-
-| Schema Field | Covenant | What It Enforces |
-|-------------|----------|-----------------|
-| `ai_assistance.tool_name` | C3 | Explicit identification of the AI system used |
-| `ai_assistance.tool_purpose` | C3 | Specific task AI was invoked for |
-| `ai_assistance.human_review[]` | C4 | Named reviewer, review tier, and findings |
-| `ai_assistance.human_override_log[]` | C4 | Documented corrections and rationale |
-| `ai_assistance.ai_risk_assessment` | C5 | Confidence band and documented cautions |
-
-Schema enforcement runs in CI/CD on every commit. A decision record with `ai_assistance.used = true` that omits required disclosure fields fails validation and cannot be merged.
-
-Worked example demonstrating full disclosure: [`examples/rgds-dec-0003-ai-assisted-conditional-go.md`](../examples/rgds-dec-0003-ai-assisted-conditional-go.md)
-
----
-
-## Contract Status
-
-Reference governance artifact. This contract defines governance boundaries. It does not prescribe tooling, implement enforcement, or constitute a legal agreement.
-
-Operational enforcement is the responsibility of delivery systems, governance processes, and human reviewers. Versioning and change history are tracked at the repository level.
-
-*Part of the RGDS decision governance framework. Apache 2.0. See also: [GDI v3.0](https://github.com/mj3b/governed-decision-intelligence) · [RGDS](https://github.com/mj3b/rgds)*
+See the [hypothetical example](../examples/rgds-dec-0003-ai-assisted-conditional-go.md) and [validation instructions](../docs/validation.md). Framework mappings are [interpretive only](../docs/framework-crosswalk.md): no compliance, conformity, certification, control effectiveness, or regulator acceptance is established.
