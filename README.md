@@ -95,16 +95,16 @@ rgds-ai-governance/
 | Dimension | Current state |
 |---|---|
 | Object | AI Assistance Governance method/profile |
-| Development | Working, unreleased remediation of the historical documentation |
+| Development | Working method/profile, v1.1.0 |
 | Evidence | Documentation and contract inspection; hypothetical example only |
-| Review | AI-assisted remediation; owner review pending; independent review open |
+| Review | AI-assisted remediation; owner authorized merge and release; independent review open |
 | Technical | Documentation profile with lightweight regression checks; no runtime enforcement |
 | Validation scope | Local links and selected RGDS v2.0.1 contract assumptions |
 | Open evidence gates | Qualified substantive application, independent assessment, field effectiveness |
-| Admission | Pending owner review and RGDS-family reassessment; no Registry admission asserted |
+| Admission | Pending RGDS-family reassessment and institutional decision; no Registry admission asserted |
 
 No deployment study, regulatory outcome improvement, or demonstrated human independence is established here. A schema-valid record can contain fabricated or unexamined claims. Reviewer competence, evidence access, time, organizational authority, and actual interventions require separate evidence. [HIT](https://github.com/mj3b/human-influence-telemetry) is an adjacent assessment method for practical human influence; no HIT evaluation is claimed for this profile.
 
-[CHANGELOG.md](CHANGELOG.md) preserves historical entries and records corrections separately. Cite this method using [CITATION.cff](CITATION.cff), including the exact commit used; no new release or DOI is asserted.
+[CHANGELOG.md](CHANGELOG.md) preserves historical entries and records corrections separately. Cite this method using [CITATION.cff](CITATION.cff), for version 1.1.0; no DOI is assigned. See the [v1.1.0 release](https://github.com/mj3b/rgds-ai-governance/releases/tag/v1.1.0).
 
-Author: **Mark Julius Banasihan**, [ORCID](https://orcid.org/0009-0001-8121-2878), [GitHub](https://github.com/mj3b). Existing authorship is retained. Codex assisted this remediation with repository inspection, drafting, and validation scripts under the owner's instructions; this does not establish owner approval of the resulting text. See [NOTICE](NOTICE) and [LICENSE](LICENSE).
+Author: **Mark Julius Banasihan**, [ORCID](https://orcid.org/0009-0001-8121-2878), [GitHub](https://github.com/mj3b). Existing authorship is retained. Codex assisted this remediation with repository inspection, drafting, and validation scripts under the owner's instructions; the owner authorized merge and release. This authorization does not establish independent review or substantive field validation. See [NOTICE](NOTICE) and [LICENSE](LICENSE).

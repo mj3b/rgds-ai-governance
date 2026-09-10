@@ -1,6 +1,14 @@
 # Changelog
 
-## [Unreleased] - 2026-09-09
+## [v1.1.0] - 2026-09-10
+
+Working method/profile: claim-boundary remediation. First GitHub release; the older version headings below remain historical changelog entries.
+
+- Publish the merged AI Dependency Test and bounded authority/framework corrections described in the preserved remediation entry below.
+- Update citation version and release date, and current status to reflect owner-authorized merge and publication.
+- Preserve historical proof, changelog, commits, and license. Release establishes a citable baseline, not empirical validation, certification, or Node & Norm admission.
+
+## Remediation record (originally Unreleased) - 2026-09-09
 
 Node & Norm Repository Remediation Audit v0.1 corrections, scoped to this repository.
 

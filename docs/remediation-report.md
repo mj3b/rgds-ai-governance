@@ -4,6 +4,12 @@ Date: 2026-09-09. Scope: `mj3b/rgds-ai-governance` only.
 
 Controlling specification: Node & Norm Repository Remediation Audit v0.1 from the owner's “Design Node Norm Repo” conversation, with the nine requirements in the authorized handoff. Baseline commit: `8ae4cc2e26cc3607f1e9711f72c90300789cc918`. The related Blueprint v0.1 supplies the admission gates below. This is a repository assessment, not a Registry admission decision.
 
+## Publication update: v1.1.0
+
+The owner authorized merge and publication after reviewing the remediation summary. PR #1 merged at commit `fb670d2ec2245f1f2b9f59abb1c4e9263033c24a`; post-merge validation passed. Version 1.1.0 publishes the corrected working method/profile with citation metadata dated 2026-09-10 (UTC). No DOI, independent validation, or institutional admission is asserted. The gate table below is retained as the pre-merge assessment; owner acceptance for merge/publication is now recorded, while family reassessment and independent review remain open.
+
+The following report records the original remediation pass, including its then-unreleased status.
+
 ## Changes and evidence boundaries
 
 | Requirement | Change | Inspectable evidence |

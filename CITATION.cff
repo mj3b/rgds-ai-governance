@@ -1,6 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite this working governance method and include the exact Git commit used. No release or DOI is assigned to this remediation."
+message: "Please cite this working governance method as version 1.1.0. No DOI has been assigned."
 title: "AI Assistance Governance: A Working Method/Profile for Bounded AI Participation"
+version: 1.1.0
+date-released: "2026-09-10"
 type: software
 authors:
   - family-names: Banasihan
